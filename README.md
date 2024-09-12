@@ -31,12 +31,10 @@ Prerequisites
 
 Installation
 
-    Clone the repository:
+Clone the repository:
 
-    bash
-
-git clone https://github.com/iliastsironi/VotingDapp.git
-cd VotingDapp
+    git clone https://github.com/iliastsironi/VotingDapp.git
+    cd VotingDapp
 
 Install the dependencies:
 
@@ -45,8 +43,6 @@ Install the dependencies:
 Set up environment variables:
 
 Create a .env file and add the following details:
-
-makefile
 
     INFURA_PROJECT_ID=your_infura_project_id
     PRIVATE_KEY=your_metamask_private_key
@@ -58,8 +54,6 @@ Compile the smart contract:
 Deploy the contract to Sepolia testnet:
 
 Ensure your Hardhat configuration (hardhat.config.js) includes the Sepolia testnet setup:
-
-javascript
 
     require('@nomiclabs/hardhat-waffle');
 
@@ -75,13 +69,9 @@ javascript
 
 Then, deploy using:
 
-bash
-
     npx hardhat run scripts/deploy.js --network sepolia
 
 Start the frontend:
-
-bash
 
     npm start
 
@@ -114,8 +104,6 @@ javascript
 Connecting to Sepolia with Infura
 
 Ensure that your Hardhat configuration file (hardhat.config.js) includes the Sepolia network setup using Infura:
-
-javascript
 
     sepolia: {
       url: `https://sepolia.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
