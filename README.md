@@ -10,7 +10,7 @@ This is a decentralized voting application built on the Ethereum blockchain. It 
 - **Result Calculation**: The system automatically calculates the winning candidate based on the total votes.
 - **Account Management**: Displays the connected Ethereum account from MetaMask.
 
-#Technologies Used
+# Technologies Used
 
     Solidity: For writing smart contracts.
     Hardhat: For development, testing, and deployment of smart contracts.
@@ -19,14 +19,14 @@ This is a decentralized voting application built on the Ethereum blockchain. It 
     Infura/Alchemy: Blockchain node service provider.
     MetaMask: For managing Ethereum accounts.
 
-#Prerequisites
+# Prerequisites
 
     Node.js
     MetaMask
     Hardhat
     Infura or Alchemy for node services.
 
-#Installation
+# Installation
 
 Clone the repository:
 
@@ -72,7 +72,7 @@ Start the frontend:
 
     npm start
 
-#Smart Contract Overview
+# Smart Contract Overview
 
 The Voting.sol smart contract is responsible for handling all voting logic. It ensures each voter can only vote once and calculates the winner based on votes received.
 Key Functions:
@@ -81,7 +81,7 @@ Key Functions:
     vote(uint _candidateId): Allows a voter to cast their vote.
     getWinner(): Returns the candidate with the highest votes.
 
-#Frontend Overview
+# Frontend Overview
 
 The front-end is built using React and styled via App.css. The frontend communicates with the Ethereum blockchain via Web3.js, allowing users to connect their MetaMask wallets and cast votes.
 Key Components:
@@ -89,7 +89,7 @@ Key Components:
     App.js: Main component to connect the MetaMask wallet and interact with the smart contract.
     App.css: Styling for the user interface, which gives the application a clean, modern look.
 
-#MetaMask Integration
+# MetaMask Integration
 
 The app uses MetaMask for Ethereum account management. Users can connect their wallets via MetaMask and interact with the Sepolia test network.
 
@@ -113,6 +113,6 @@ Usage
     Deploy the smart contract using Hardhat on Sepolia.
     Cast votes via the frontend and check the results.
 
-#License
+# License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
