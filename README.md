@@ -96,7 +96,6 @@ MetaMask Integration
 
 The app uses MetaMask for Ethereum account management. Users can connect their wallets via MetaMask and interact with the Sepolia test network.
 
-javascript
 
     const ethereum = window.ethereum;
     await ethereum.request({ method: 'eth_requestAccounts' });
